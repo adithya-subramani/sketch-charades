@@ -15,7 +15,7 @@ const io = require('socket.io')(server, {
 })
 
 app.use(cors())
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 var all_room_info = []
 var all_users = []
